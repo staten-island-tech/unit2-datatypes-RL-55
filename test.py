@@ -1,15 +1,27 @@
-#bill=input("Bill amount")
-#bill=float(bill)
-#tip=0.15*bill
-#int(tip)
-#total=bill+tip
-#print(total)
+def tipcalc():
+    bill=input("Bill amount")
+    bill=float(bill)
+    tip=0.15*bill
+    int(tip)
+    total=bill+tip
+    print(total)
 
-sentence=input("Write a sentence.")
-y= sentence.split()
+def wordcount():
+    sentence=input("Write a sentence.")
+    y=sentence.split()
+    x=0
+    for i in y:
+        x=x+1
+    print(x)
 
-print(y)
-
+def even():
+    num=input("Number")
+    str(num)
+    if (num %2) == 1:
+        print("Odd")
+    else:
+        print("Even")
+even()
 #name=input("What's your name?")
 #print(name)
 #def add(x,y):
@@ -37,3 +49,6 @@ print(y)
 #if y==True:
 #elif y==None:
 #else y==False:
+#def and_movies(friend, money):
+#if friend and money:
+#print()
