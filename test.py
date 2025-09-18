@@ -14,14 +14,33 @@ def wordcount():
         x=x+1
     print(x)
 
-def even():
-    num=input("Number")
-    str(num)
-    if (num %2) == 1:
+def even(x):
+    if (x %2) == 1:
         print("Odd")
     else:
         print("Even")
-even()
+
+def tipcalc2():
+    tip=input("How was the service? bad, okay, good , or great ")
+    if tip=="bad":
+        tip=0
+    elif tip=="okay":
+        tip=0.15
+    elif tip=="good":
+        tip=0.2
+    elif tip=="great":
+        tip=0.25
+    else:
+        print("Invalid")
+    bill=input("Bill amount")
+    bill=float(bill)
+    tipamount=tip*bill
+    int(tipamount)
+    total=bill+tipamount
+    print(f"Total: {total}")
+tipcalc2()
+
+
 #name=input("What's your name?")
 #print(name)
 #def add(x,y):
