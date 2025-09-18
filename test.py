@@ -35,12 +35,21 @@ def tipcalc2():
     bill=input("Bill amount")
     bill=float(bill)
     tipamount=tip*bill
+    print(f"SubTotal: {tipamount}")
     int(tipamount)
     total=bill+tipamount
     print(f"Total: {total}")
-tipcalc2()
 
+def factor():
+    list=[]
+    num=input("Number")
+    num=int(num)
+    for i in range(num):
+        if num%(i+1)==0:
+            list.append(i+1)
+    print(list)
 
+factor()
 #name=input("What's your name?")
 #print(name)
 #def add(x,y):
